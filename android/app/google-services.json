@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "433234402905",
+    "project_id": "bookreview-app-sample-5c098",
+    "storage_bucket": "bookreview-app-sample-5c098.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433234402905:android:e31877ec2a61a4f5cd5b48",
+        "android_client_info": {
+          "package_name": "com.sudarlife.bookreview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433234402905-2ns2o3d0m9e805h84n6jhdg3tlkb69rc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV9RN63Vb5hTEQ-3U2pREQDKhiU6ZJmBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433234402905-2ns2o3d0m9e805h84n6jhdg3tlkb69rc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
