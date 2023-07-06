@@ -1,19 +1,17 @@
+import 'package:bookreview/src/common/model/naver_book_info_results.dart';
+import 'package:bookreview/src/common/model/naver_book_search_option.dart';
 import 'package:dio/dio.dart';
 
 class NaverBookRepository {
   final Dio _dio;
   NaverBookRepository(this._dio);
 
-  void searchBooks() async {
+  Future<NaverBookInfoResults> searchBooks(
+      NaverBookSearchOption searchOption) async {
     // search book 뒷부분
-    var response = await _dio.get('v1/search/book.json', queryParameters: {
-      //params의 값
-      'query': "",
-      'displey': 10,
-      'start': 1,
-      'sort': 'date',
-    });
+    var response = await _dio.get('v1/search/book.json',
+        queryParameters: searchOption.toMap());
 
-    print(response);
+    return NaverBookInfoResults.fromJson(response.data);
   }
 }
